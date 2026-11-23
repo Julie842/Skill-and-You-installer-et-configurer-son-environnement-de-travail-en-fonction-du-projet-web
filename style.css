@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.55;
+  margin: 0;
+  padding: 16px;
+}
+
+#titre_page {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+  color: darkcyan;
+  border: 10px #FF6F61 double;
+  max-width: 100%;
+  width: 320px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+#corps_page {
+  border: 1px solid black;
+  margin: 24px auto;
+  max-width: 900px;
+  padding: 16px 24px;
+}
+
+.titre_paragraphe {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-left: 2px solid #A3E4D7;
+  border-bottom: 2px solid #A3E4D7;
+  border-bottom-left-radius: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-top: 24px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+mark {
+  background-color: #E5D3B3;
+  padding: 0 3px;
+}
+
+.gras_sable {
+  font-weight: bold;
+  color: #7A5C38;
+}
+
+#pied_page {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.55);
+  max-width: 900px;
+  margin: 12px auto 0;
+  transition: color 0.2s ease;
+}
+
+#pied_page:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.zone-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+#logo-oceanie {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  animation: flottement-doux 4s ease-in-out infinite;
+}
+
+@keyframes flottement-doux {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.03);
+  }
+}
